@@ -1,0 +1,57 @@
+/* Web Develop Area css
+============================================================================================ */
+
+.single_service-area{
+    h2{
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: $primary-color;
+    }
+    h3{
+        font-family: $title-font;
+        color: $title-color ;
+        font-size: 18px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    p{
+        text-align: center  ;
+    }
+    .service_feature-box{
+        padding: 45px 25px;
+        background: #f9f9fd;
+        cursor: pointer;
+        @include transition;
+        @media only screen and (max-width: 767px) {
+            // height: 425px;
+        }
+        @media (max-width: 575px) {
+            height: auto;
+        }
+        h4 {
+            color: $primary-color;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        ul{
+            padding: 0;
+            
+            .fa{
+                color: $primary-color;
+                margin-right: 5px;
+                font-size: 20px;
+            }
+            li{
+            list-style: none;
+            font-size: 18px;
+            color: $title-color;
+            margin-bottom: 5px;
+            }
+        }
+        &:hover {
+            box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+            background: #fff;
+        }
+    }
+}

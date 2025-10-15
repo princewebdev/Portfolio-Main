@@ -97,7 +97,7 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .section_gap {
-  padding: 200px 0;
+  padding: 80px 0;
 }
 @media (max-width: 1199px) {
   .section_gap {
@@ -106,7 +106,7 @@ button:focus {
 }
 
 .section_gap_top {
-  padding-top: 200px;
+  padding-top: 80px;
 }
 @media (max-width: 1199px) {
   .section_gap_top {
@@ -115,7 +115,7 @@ button:focus {
 }
 
 .section_gap_bottom {
-  padding-bottom: 200px;
+  padding-bottom: 80px;
 }
 @media (max-width: 1199px) {
   .section_gap_bottom {
@@ -1437,10 +1437,10 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /*============== contact_area css ================*/
-.mapBox {
+/* .mapBox {
   height: 420px;
   margin-top: 80px;
-}
+} */
 
 .contact_info .info_item {
   position: relative;
@@ -3075,6 +3075,7 @@ h6 {
   text-transform: uppercase;
 }
 .feature_item p {
+  color: #777777;
   margin-bottom: 0px;
 }
 .feature_item:hover {
@@ -4027,6 +4028,64 @@ h6 {
 
 /* End Footer Area css
 ============================================================================================ */
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/* Web Develop Area css
+============================================================================================ */
+.single_service-area h2 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #4458dc;
+}
+.single_service-area h3 {
+  font-family: "Rubik", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.single_service-area p {
+  text-align: center;
+}
+.single_service-area .service_feature-box {
+  padding: 45px 25px;
+  background: #f9f9fd;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+@media (max-width: 575px) {
+  .single_service-area .service_feature-box {
+    height: auto;
+  }
+}
+.single_service-area .service_feature-box h4 {
+  color: #4458dc;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.single_service-area .service_feature-box ul {
+  padding: 0;
+}
+.single_service-area .service_feature-box ul .fa {
+  color: #4458dc;
+  margin-right: 5px;
+  font-size: 20px;
+}
+.single_service-area .service_feature-box ul li {
+  list-style: none;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.single_service-area .service_feature-box:hover {
+  box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+  background: #fff;
+}
+
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
