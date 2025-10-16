@@ -234,9 +234,9 @@
 		margin-bottom: 35px;
 	}
 	.short_info {
-		margin-top: 30px;
+		margin-top: 20px;
 		@media (max-width: 767px) {
-			margin-top: 20px;
+			margin-top: 15px;
 		}
 		h4 {
 			text-transform: uppercase;
@@ -244,6 +244,21 @@
 			margin-bottom: 0px;
 			a {
 				color: $title-color;
+				color: $primary-color;
+				border-bottom: 2px solid $primary-color;
+				i{
+					color: transparent;
+					font-size: 26px;
+					rotate: -27deg;
+					-webkit-text-stroke: 1px $primary-color;
+				}
+				
+			}
+		}
+		&:hover{
+			i{
+				margin-left: 5px;
+				@include transition;
 			}
 		}
 	}

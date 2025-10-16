@@ -272,9 +272,8 @@ button:focus {
   border-radius: 0px;
   width: 100%;
 }
-.header_area .navbar .logo {
-  font-family: "Rubik", sans-serif;
-  color: #4458dc;
+.header_area .navbar .logo img {
+  width: 180px;
 }
 .header_area .navbar .nav .nav-item {
   margin-right: 45px;
@@ -462,12 +461,14 @@ button:focus {
   font-size: 40px;
   margin-bottom: 20px;
   position: relative;
-  color: transparent;
-  -webkit-text-stroke: 1px #4458dc;
+  background-image: linear-gradient(to right, #4458dc 40%, #000000); /* Magenta to Cyan */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .home_banner_area .banner_inner .banner_content h1 {
   margin-top: 20px;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 60px;
   margin-bottom: 25px;
 }
@@ -1437,10 +1438,10 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /*============== contact_area css ================*/
-/* .mapBox {
+.mapBox {
   height: 420px;
   margin-top: 80px;
-} */
+}
 
 .contact_info .info_item {
   position: relative;
@@ -3272,11 +3273,11 @@ h6 {
   }
 }
 .portfolio_box .short_info {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 @media (max-width: 767px) {
   .portfolio_box .short_info {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 .portfolio_box .short_info h4 {
@@ -3286,6 +3287,21 @@ h6 {
 }
 .portfolio_box .short_info h4 a {
   color: #000000;
+  color: #4458dc;
+  border-bottom: 2px solid #4458dc;
+}
+.portfolio_box .short_info h4 a i {
+  color: transparent;
+  font-size: 26px;
+  rotate: -27deg;
+  -webkit-text-stroke: 1px #4458dc;
+}
+.portfolio_box .short_info:hover i {
+  margin-left: 5px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .single_portfolio {
@@ -3986,6 +4002,9 @@ h6 {
 }
 .footer_area .footer_logo {
   text-align: center;
+}
+.footer_area .footer_logo a img {
+  width: 180px;
 }
 .footer_area .footer_logo h4 {
   font-size: 20px;
